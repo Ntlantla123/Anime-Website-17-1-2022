@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+
+:root {
+    --red: rgb(84, 112, 240);
+    --black: #181818;
+    box-shadow: 0.5rem 1.5rem rgba(0,0,0,.1s);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+/* Header NavBar Section */
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-margin-top: 5.5rem;
+    scroll-behavior: smooth ;
+}
+
+.heading {
+    text-align: center;
+    color: var(--red);
+    margin-bottom: 3rem;
+    font-size: 4rem;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgb(70, 73, 77);
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+    box-shadow: var(--box-shadow);
+}
+header .navbar .active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+header .logo {
+    color: var(--red);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+header .logo i {
+    color: aqua;
+}
+header .navbar a {
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: #fff;
+    font-weight: bolder;
+}
+header .navbar a.active,
+header .navbar a:hover {
+    color: #fff;
+    background: var(--red);
+}
+header .icons i,
+header .icons a {
+    cursor: pointer;
+    margin-left: 5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #fff;
+    border-radius: 5rem;
+    background: var(--red);
+}
+header .icons i:hover,
+header .icons a:hover {
+    color: var(--red);
+    background: #fff;
+    transform: rotate(360deg);
+}
+header .icons #menu-bars {
+    display: none;
+}
+.span2 {
+    color: white;
+}
+/*End Header NavBar Section */
+
+
+
+
+/* Body Section */
+body {
+   background-color: var(--black);
+    
+}
+/*End Body Section */
+
+
+
+
+/* Button Section */
+button {
+    box-shadow: black;
+    width: 20%;
+    font-size: 20px;
+    font-weight: 700;
+    height: 10%;
+    border-radius: 10px;
+    border: transparent;
+    position: relative;
+    top: 50vh;
+    left: 10%;
+    
+ }
+ a {
+    color: black;
+ }
+ 
+ button:hover {
+    
+     box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee,
+     0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+     text-shadow: 0 0 5px #15f4ee,0 0 5px #15f4ee,;
+ }
+.btn:hover {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+/* End Button Section */
+
+
+
+/* This is Landing Page Div .Container Section */ 
+#Home .container {
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+    position: relative;
+    top: 150px;
+    left: 3%;
+    color: white;
+    font-size: 5rem;
+}
+h3 {
+    position: relative;
+    top: 170px;
+    left: 3%;
+    color: rgb(212, 199, 199);
+    font-size: 2rem;
+}
+
+h4 {
+    position: relative;
+    left: 8%;
+    top: -50px;
+    font-size: 3rem;
+    color: rgb(168, 159, 159);
+}
+span {
+    color: aqua;
+}
+
+/* End Landing Page Div .Container Section */ 
+
+
+ /* This is the Annny footer section */
+
+#annny body {
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+ 
+ #annny * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ #annny .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#annny ul{
+    list-style: none;
+}
+
+ #annny .footer {
+         background-color: #24262b;
+         padding: 70px 0;
+          
+}
+#annny .container2 {
+        height: 40vh;
+            
+}
+#annny .container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+
+#annny .footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+#annny .footer-col h5 {
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+#annny .footer-col h5::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+#annny .footer ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+#annny .footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+#annny .footer-col ul li a:hover {
+    color: white;
+    padding-left: 8px;
+}
+
+#annny .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+#annny .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: white;
+}
+
+/* end footer section */
+
+
+
+/* Horizontal line Section */
+ .h {
+    width: 100%;
+    height: 5px;
+    border: 0 none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 200px;
+    margin-bottom: 90px;
+    background-color: rgb(77, 72, 72);
+ }
+
+ .h11 {
+    width: 100%;
+    height: 1px;
+    border: 0 none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 200px;
+    margin-bottom: 90px;
+    background-color: rgb(77, 72, 72);
+ }
+ img {
+    position: relative;
+    top: 20%;
+    left: 70%;
+    height: 250px;
+ }
+h2 {
+    color: white;
+}
+.h2copy {
+    position: relative;
+    top: 30%;
+    left: 8%;
+    font-size: 6em;
+}
+
+.pcopy {
+    color: rgb(194, 188, 188);
+    position: relative;
+    left: 8%;
+    font-size: 2.5em;
+}
+/* End Horizontal line Section */
+
+iframe {
+    position: relative;
+    left: 50%;
+    top: -550px;
+}
+
+
+
+.column {
+    position: relative;
+    left: -10%;
+    float: left;
+    width: 25%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+
+  .column:hover {
+    transform: scale(1.1);
+    z-index: 2;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* This Is a Responsive Section */
+
+@media(max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+    header {
+        padding: 1rem 2rem;
+    }
+}
+@media(max-width: 768px) {
+    header .icons #menu-bars {
+        display: inline-block;
+    }
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--black);
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom: .1rem solid rgba(0,0,0,.2);
+        padding: 1rem;
+        clip-path: polygon(0,0 100% 0, 100% 0, 0 0);
+    }
+    header .navbar .active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    header .navbar a {
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: var(--red);
+    }
+}
+
+@media(max-width: 468) {
+        html {
+            font-size: 50%;
+        }
+}
+
